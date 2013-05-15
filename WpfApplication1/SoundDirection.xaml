@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplication1.SoundDirection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SoundDirection" Height="480" Width="640">
+    <Canvas>
+        <Line x:Name="middlebar" Stroke="Green" StrokeThickness="10" X1="320" Y1="0" X2="320" Y2="480"/>
+        <Line x:Name="bar" Stroke="Aqua" StrokeThickness="10" X1="320" Y1="0" X2="320" Y2="480">
+            <Line.RenderTransform>              
+                <RotateTransform x:Name="sourceangle" Angle="45" CenterX="320" CenterY="0"/>
+            </Line.RenderTransform>
+        </Line>
+    </Canvas>
+</Window>
